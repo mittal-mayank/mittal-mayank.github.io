@@ -1,0 +1,155 @@
+/* :root points to te html element
+ * calc() is used to perform calculations and var() is used to create a variable
+ * these var() variables are created on the :root therefore are accessible anywhere
+ * either initialize them within var() as parameter, or change value inside :root
+ * fallbacks in css are set using ,
+ */
+
+@keyframes changeColor {
+    0% {
+        background-color: red;
+    }
+    10% {
+        background-color: orange;
+    }
+    20% {
+        background-color: yellow;
+    }
+    30% {
+        background-color: greenyellow;
+    }
+    40% {
+        background-color: lightgreen;
+    }
+    50% {
+        background-color: lightseagreen;
+    }
+    60% {
+        background-color: aqua;
+    }
+    70% {
+        background-color: blue;
+    }
+    80% {
+        background-color: blueviolet;
+    }
+    90% {
+        background-color: purple;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+@keyframes slotSpin {
+    0% {
+        transform: translateY(-200px) scale(0.7);
+    }
+    50% {
+        transform: translateY(0) scale(1);
+    }
+    100% {
+        transform: translateY(200px) scale(0.7);
+    }
+}
+
+body {
+    background: radial-gradient(orange, red) fixed;
+
+    text-align: center;
+    font-family: Impact, sans-serif;
+}
+
+#heading {
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+#space {
+    height: 50px;
+}
+
+#screen {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background: radial-gradient(darkblue, black);
+    width: 700px;
+    height: 300px;
+    margin: auto;
+    box-shadow: black 0 0 20px;
+    border-radius: 10px;
+}
+
+.slot {
+    background: radial-gradient(lightblue, darkblue);
+    width: 200px;
+    height: 250px;
+    box-shadow: black 0 0 10px;
+    border-radius: 20px / 100px;
+
+    overflow: hidden;
+}
+
+.value {
+    display: inline-block;
+
+    font-size: 100px;
+    line-height: 250px;
+
+    animation: slotSpin infinite linear paused;
+}
+
+#controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+
+    background: radial-gradient(red, darkred);
+    width: 150px;
+    height: 150px;
+    border: 2px blue solid;
+    box-shadow: black 0 0 15px;
+    margin: 0 20px;
+
+    line-height: 150px;
+    font-size: 50px;
+
+    transition: 0.3s;
+    border-radius: 75px;
+}
+
+.btn:active {
+    transform: scale(0.9);
+    transition: 0.1s;
+    box-shadow: black 0 0 10px;
+}
+
+.money {
+    display: inline-block;
+
+    background: radial-gradient(limegreen, darkgreen);
+    width: 150px;
+    height: 150px;
+    border: 2px blue solid;
+    box-shadow: black 0 0 15px;
+    margin: 0 20px;
+    border-radius: 10px;
+
+    line-height: 50px;
+    font-size: 30px;
+}
+
+#inpBid {
+    width: 100px;
+    background-color: limegreen;
+    border-radius: 10px;
+
+    font-size: 20px;
+    font-family: Impact, sans-serif;
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Notes</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+<div id="topBar">
+    <span id="mainTitle">📋 Notes</span>
+    <span id="newNote">
+        <span id="initialNewNote">Type a new note . . .</span><span id="newNoteButtons">
+            <span class="buttonsNewNote" id="addNewNote">➕</span>
+            <span class="buttonsNewNote" id="minimizeNewNote">➖</span>
+            <span class="buttonsNewNote" id="trashNewNote">🗑</span>
+        </span>
+        <textarea class="textCase" id="newNoteTitle" placeholder="Title"></textarea>
+        <textarea class="textCase" id="newNoteContent" placeholder="Content"></textarea>
+    </span>
+</div>
+<div id="sideBar">
+    <div id="sideTitle">✅ Checklist</div>
+    <div id="checkList"></div>
+</div>
+<div id="newCheckItem">
+    <span class="buttonsCheckList btn" id="addNewCheckItem">➕</span>
+    <span class="buttonsCheckList btn" id="trashNewCheckItem">🗑</span>
+    <textarea class="textCase" id="newCheckItemContent" placeholder="Content" rows="1"></textarea>
+</div>
+<div id="allNotes"></div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slot Machine!</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+<h1 id="heading">SLOT MACHINE</h1>
+<div id="screen">
+    <div class="slot">
+        <span class=value>💲</span>
+    </div>
+    <div class="slot">
+        <span class="value">💲</span>
+    </div>
+    <div class="slot">
+        <span class="value">💲</span>
+    </div>
+</div>
+<div id="space"></div>
+<div id="controls">
+    <div class="btn" id="start">⏩</div>
+    <div class="btn" id="stop">⏸</div>
+    <div class="money">
+        <span>Bid</span>
+        <br>
+        <span>💰</span>
+        <br>
+        <span id="bid">
+            <input id="inpBid" type="number" min="0">
+        </span>
+    </div>
+    <div class="money">
+        <span>Total</span>
+        <br>
+        <span>💰</span>
+        <br>
+        <span id="total"></span>
+    </div>
+</div>
+</body>
+</html>
