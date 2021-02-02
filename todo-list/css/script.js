@@ -51,6 +51,7 @@ addNewNote.on('click', function () {
         allNotes.prepend(createdNote)
         trashNewNote.trigger('click')
     } else {
+        newNote.finish()
         newNote.effect('shake')
     }
 })
@@ -87,6 +88,7 @@ addNewCheckItem.on('click', function () {
         checkList.scrollTop = checkList.scrollHeight
         trashNewCheckItem.trigger('click')
     } else {
+        newCheckItemContent.finish()
         newCheckItemContent.effect("shake", {distance: '2'})
     }
 })
