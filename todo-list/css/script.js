@@ -51,7 +51,7 @@ addNewNote.on('click', function () {
         allNotes.prepend(createdNote)
         trashNewNote.trigger('click')
     } else {
-        newNote.finish()
+        newNote.finish().css('left', 'unset')
         newNote.effect('shake')
     }
 })
