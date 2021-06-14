@@ -2,8 +2,8 @@ This repository has been made to serve static files and minor front-end only pro
 
 It currently houses the following projects:
 
-[Task Handler](https://mittal-mayank.github.io/slot-machine/) using JQuery, HTML and CSS.
+[Task Handler](https://mittal-mayank.github.io/todo-list/css/) using JQuery, HTML and CSS.
 
 [Slot machine](https://mittal-mayank.github.io/slot-machine/) using Javascript, HTML and CSS.
 
-[Task Handler](https://mittal-mayank.github.io/slot-machine/) using JQuery, HTML and Bootstrap.
+[Task Handler](https://mittal-mayank.github.io/todo-list/bootstrap/) using JQuery, HTML and Bootstrap.
